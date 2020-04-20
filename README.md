@@ -1,4 +1,4 @@
-# cloudmark-api 
+# bmi_calc
 
 A Simple BMI Calculator built using ReactJS.
 
