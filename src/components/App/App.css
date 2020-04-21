@@ -8,12 +8,15 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+ /* border: 5px solid yellow;*/
 }
 
-.container {
-  border: 1px solid black;
+.heading_grid {
+  width: 90%;
+  justify-content: center;
 }
-
-.rows {
-  align-self: center;
+/*
+* {
+  border: 1px solid white;
 }
+*/

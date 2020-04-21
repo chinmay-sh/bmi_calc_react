@@ -1,16 +1,23 @@
 import React from 'react';
-import {Button} from 'react-bootstrap';
+import {Button} from 'react-mdl';
 
-
-class ButtonSubmit extends React.Component{
+export class ButtonPrimary extends React.Component{
 
     render(){
         return(
 
-            <Button size={this.props.size} className="mb-4" variant={this.props.variant} onClick={this.props.click}>{this.props.text}</Button>
+            <Button raised primary onClick={this.props.onClick} ripple>{this.props.text}</Button>
             
         );
     }
 }
 
-export default ButtonSubmit;
+export class ButtonAccent extends React.Component{
+    render(){
+        return(
+
+            <Button raised accent onClick={this.props.onClick} ripple>{this.props.text}</Button>
+            
+        );
+    }
+}

@@ -1,18 +1,20 @@
 import React from 'react';
-import {InputGroup,FormControl} from 'react-bootstrap';
-
+import {Textfield} from 'react-mdl';
 
 class TextField extends React.Component{
-
+    
     render(){
         return(
-
-            <InputGroup size="md" className="mb-3">
-                <InputGroup.Prepend>
-                <InputGroup.Text id="inputGroup-sizing-lg">{this.props.preText}</InputGroup.Text>
-                </InputGroup.Prepend>
-                <FormControl aria-label="Large" aria-describedby="inputGroup-sizing-sm" />
-            </InputGroup>
+            <div>
+                <Textfield
+                    onChange={this.props.on_change}
+                    pattern="-?[0-9]*(\.[0-9]+)?"
+                    error="Input is not a number!"
+                    label={this.props.label}
+                    floatingLabel
+                    style={{width: '90%',color:'#000'}}
+                />
+            </div>
             
         );
     }
