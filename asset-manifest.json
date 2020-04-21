@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/the-redlord.github.io/bmi_calc_react/static/css/main.b950528a.chunk.css",
-    "main.js": "/the-redlord.github.io/bmi_calc_react/static/js/main.80291fd8.chunk.js",
-    "main.js.map": "/the-redlord.github.io/bmi_calc_react/static/js/main.80291fd8.chunk.js.map",
-    "runtime-main.js": "/the-redlord.github.io/bmi_calc_react/static/js/runtime-main.aec6ecc6.js",
-    "runtime-main.js.map": "/the-redlord.github.io/bmi_calc_react/static/js/runtime-main.aec6ecc6.js.map",
-    "static/css/2.69121389.chunk.css": "/the-redlord.github.io/bmi_calc_react/static/css/2.69121389.chunk.css",
-    "static/js/2.678b32c8.chunk.js": "/the-redlord.github.io/bmi_calc_react/static/js/2.678b32c8.chunk.js",
-    "static/js/2.678b32c8.chunk.js.map": "/the-redlord.github.io/bmi_calc_react/static/js/2.678b32c8.chunk.js.map",
-    "index.html": "/the-redlord.github.io/bmi_calc_react/index.html",
-    "precache-manifest.593d20bfafd5cf8165b8d338a3a8e159.js": "/the-redlord.github.io/bmi_calc_react/precache-manifest.593d20bfafd5cf8165b8d338a3a8e159.js",
-    "service-worker.js": "/the-redlord.github.io/bmi_calc_react/service-worker.js",
-    "static/css/2.69121389.chunk.css.map": "/the-redlord.github.io/bmi_calc_react/static/css/2.69121389.chunk.css.map",
-    "static/css/main.b950528a.chunk.css.map": "/the-redlord.github.io/bmi_calc_react/static/css/main.b950528a.chunk.css.map",
-    "static/js/2.678b32c8.chunk.js.LICENSE.txt": "/the-redlord.github.io/bmi_calc_react/static/js/2.678b32c8.chunk.js.LICENSE.txt",
-    "static/media/logo.svg": "/the-redlord.github.io/bmi_calc_react/static/media/logo.5d5d9eef.svg"
+    "main.css": "/bmi_calc_react/static/css/main.b950528a.chunk.css",
+    "main.js": "/bmi_calc_react/static/js/main.e9c877f4.chunk.js",
+    "main.js.map": "/bmi_calc_react/static/js/main.e9c877f4.chunk.js.map",
+    "runtime-main.js": "/bmi_calc_react/static/js/runtime-main.bc6e77e2.js",
+    "runtime-main.js.map": "/bmi_calc_react/static/js/runtime-main.bc6e77e2.js.map",
+    "static/css/2.69121389.chunk.css": "/bmi_calc_react/static/css/2.69121389.chunk.css",
+    "static/js/2.678b32c8.chunk.js": "/bmi_calc_react/static/js/2.678b32c8.chunk.js",
+    "static/js/2.678b32c8.chunk.js.map": "/bmi_calc_react/static/js/2.678b32c8.chunk.js.map",
+    "index.html": "/bmi_calc_react/index.html",
+    "precache-manifest.4a4b911037e68cfc909f5d319a9e6d25.js": "/bmi_calc_react/precache-manifest.4a4b911037e68cfc909f5d319a9e6d25.js",
+    "service-worker.js": "/bmi_calc_react/service-worker.js",
+    "static/css/2.69121389.chunk.css.map": "/bmi_calc_react/static/css/2.69121389.chunk.css.map",
+    "static/css/main.b950528a.chunk.css.map": "/bmi_calc_react/static/css/main.b950528a.chunk.css.map",
+    "static/js/2.678b32c8.chunk.js.LICENSE.txt": "/bmi_calc_react/static/js/2.678b32c8.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/bmi_calc_react/static/media/logo.5d5d9eef.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.aec6ecc6.js",
+    "static/js/runtime-main.bc6e77e2.js",
     "static/css/2.69121389.chunk.css",
     "static/js/2.678b32c8.chunk.js",
     "static/css/main.b950528a.chunk.css",
-    "static/js/main.80291fd8.chunk.js"
+    "static/js/main.e9c877f4.chunk.js"
   ]
 }
