@@ -7,7 +7,7 @@ class ButtonSubmit extends React.Component{
     render(){
         return(
 
-            <Button size="lg" variant={this.props.variant}>{this.props.text}</Button>
+            <Button size={this.props.size} className="mb-4" variant={this.props.variant} onClick={this.props.click}>{this.props.text}</Button>
             
         );
     }
