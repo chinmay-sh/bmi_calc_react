@@ -1,4 +1,6 @@
-# bmi_calc
+# bmi_calc [![gh-pages](https://img.shields.io/badge/gh--pages-deployed-blue?logo=github)](https://the-redlord.github.io/bmi_calc_react/)
+
+Deployed to GitHub Pages : https://the-redlord.github.io/bmi_calc_react/
 
 A Simple BMI Calculator built using ReactJS.
 
@@ -6,7 +8,7 @@ A Simple BMI Calculator built using ReactJS.
 
 1. git clone https://github.com/the-redlord/bmi_calc_react.git
 2. npm install
-4. npm index.js
+4. npm start
 
 ### Prerequisites
 
