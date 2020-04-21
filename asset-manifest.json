@@ -1,26 +1,25 @@
 {
   "files": {
-    "main.css": "/bmi_calc_react/static/css/main.b950528a.chunk.css",
-    "main.js": "/bmi_calc_react/static/js/main.1b83089e.chunk.js",
-    "main.js.map": "/bmi_calc_react/static/js/main.1b83089e.chunk.js.map",
+    "main.css": "/bmi_calc_react/static/css/main.5794faab.chunk.css",
+    "main.js": "/bmi_calc_react/static/js/main.10a8f2e6.chunk.js",
+    "main.js.map": "/bmi_calc_react/static/js/main.10a8f2e6.chunk.js.map",
     "runtime-main.js": "/bmi_calc_react/static/js/runtime-main.bc6e77e2.js",
     "runtime-main.js.map": "/bmi_calc_react/static/js/runtime-main.bc6e77e2.js.map",
-    "static/css/2.69121389.chunk.css": "/bmi_calc_react/static/css/2.69121389.chunk.css",
-    "static/js/2.8ec23366.chunk.js": "/bmi_calc_react/static/js/2.8ec23366.chunk.js",
-    "static/js/2.8ec23366.chunk.js.map": "/bmi_calc_react/static/js/2.8ec23366.chunk.js.map",
+    "static/css/2.b6a8c48d.chunk.css": "/bmi_calc_react/static/css/2.b6a8c48d.chunk.css",
+    "static/js/2.bab0a3a1.chunk.js": "/bmi_calc_react/static/js/2.bab0a3a1.chunk.js",
+    "static/js/2.bab0a3a1.chunk.js.map": "/bmi_calc_react/static/js/2.bab0a3a1.chunk.js.map",
     "index.html": "/bmi_calc_react/index.html",
-    "precache-manifest.aa47681c3a9d2aaccd05ab3ad0a0b2ca.js": "/bmi_calc_react/precache-manifest.aa47681c3a9d2aaccd05ab3ad0a0b2ca.js",
+    "precache-manifest.c4bb05a2e506d295ff4cf5e40b166960.js": "/bmi_calc_react/precache-manifest.c4bb05a2e506d295ff4cf5e40b166960.js",
     "service-worker.js": "/bmi_calc_react/service-worker.js",
-    "static/css/2.69121389.chunk.css.map": "/bmi_calc_react/static/css/2.69121389.chunk.css.map",
-    "static/css/main.b950528a.chunk.css.map": "/bmi_calc_react/static/css/main.b950528a.chunk.css.map",
-    "static/js/2.8ec23366.chunk.js.LICENSE.txt": "/bmi_calc_react/static/js/2.8ec23366.chunk.js.LICENSE.txt",
-    "static/media/logo.svg": "/bmi_calc_react/static/media/logo.5d5d9eef.svg"
+    "static/css/2.b6a8c48d.chunk.css.map": "/bmi_calc_react/static/css/2.b6a8c48d.chunk.css.map",
+    "static/css/main.5794faab.chunk.css.map": "/bmi_calc_react/static/css/main.5794faab.chunk.css.map",
+    "static/js/2.bab0a3a1.chunk.js.LICENSE.txt": "/bmi_calc_react/static/js/2.bab0a3a1.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.bc6e77e2.js",
-    "static/css/2.69121389.chunk.css",
-    "static/js/2.8ec23366.chunk.js",
-    "static/css/main.b950528a.chunk.css",
-    "static/js/main.1b83089e.chunk.js"
+    "static/css/2.b6a8c48d.chunk.css",
+    "static/js/2.bab0a3a1.chunk.js",
+    "static/css/main.5794faab.chunk.css",
+    "static/js/main.10a8f2e6.chunk.js"
   ]
 }
