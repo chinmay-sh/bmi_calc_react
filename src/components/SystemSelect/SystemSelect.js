@@ -15,16 +15,16 @@ class SystemSelect extends React.Component{
                 }
                 
                 
-            }}>
+            }} style={{justifyContent:"center"}}>
                 <FormControlLabel
                     value="imperial"
-                    control={<Radio color="primary" />}
+                    control={<Radio style={{color:"#00b7eb"}} />}
                     label="Imperial"
                     labelPlacement="end"
                     />
                 <FormControlLabel
                     value="metric"
-                    control={<Radio />}
+                    control={<Radio style={{color:"#ffa500"}} />}
                     label="Metric"
                     labelPlacement="end"
                     />
