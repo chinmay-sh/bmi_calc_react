@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ccbc917a114d72616d40b565c4e64164",
+    "revision": "32197eb956a61d5fa979154108f02537",
     "url": "/bmi_calc_react/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/bmi_calc_react/static/css/2.b6a8c48d.chunk.css"
   },
   {
-    "revision": "e1266a1a6824620bb536",
+    "revision": "321c112599f4fb9ebafb",
     "url": "/bmi_calc_react/static/css/main.5794faab.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/bmi_calc_react/static/js/2.ab06db7d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e1266a1a6824620bb536",
-    "url": "/bmi_calc_react/static/js/main.1737496f.chunk.js"
+    "revision": "321c112599f4fb9ebafb",
+    "url": "/bmi_calc_react/static/js/main.6e77a33f.chunk.js"
   },
   {
     "revision": "ce03848da54bba53fb0c",

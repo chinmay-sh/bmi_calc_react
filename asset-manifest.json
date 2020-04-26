@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/bmi_calc_react/static/css/main.5794faab.chunk.css",
-    "main.js": "/bmi_calc_react/static/js/main.1737496f.chunk.js",
-    "main.js.map": "/bmi_calc_react/static/js/main.1737496f.chunk.js.map",
+    "main.js": "/bmi_calc_react/static/js/main.6e77a33f.chunk.js",
+    "main.js.map": "/bmi_calc_react/static/js/main.6e77a33f.chunk.js.map",
     "runtime-main.js": "/bmi_calc_react/static/js/runtime-main.bc6e77e2.js",
     "runtime-main.js.map": "/bmi_calc_react/static/js/runtime-main.bc6e77e2.js.map",
     "static/css/2.b6a8c48d.chunk.css": "/bmi_calc_react/static/css/2.b6a8c48d.chunk.css",
     "static/js/2.ab06db7d.chunk.js": "/bmi_calc_react/static/js/2.ab06db7d.chunk.js",
     "static/js/2.ab06db7d.chunk.js.map": "/bmi_calc_react/static/js/2.ab06db7d.chunk.js.map",
     "index.html": "/bmi_calc_react/index.html",
-    "precache-manifest.bc72cf4069fc2fa14ee316a0112510a4.js": "/bmi_calc_react/precache-manifest.bc72cf4069fc2fa14ee316a0112510a4.js",
+    "precache-manifest.97917bec532e3772c3e15a5ab4d8e778.js": "/bmi_calc_react/precache-manifest.97917bec532e3772c3e15a5ab4d8e778.js",
     "service-worker.js": "/bmi_calc_react/service-worker.js",
     "static/css/2.b6a8c48d.chunk.css.map": "/bmi_calc_react/static/css/2.b6a8c48d.chunk.css.map",
     "static/css/main.5794faab.chunk.css.map": "/bmi_calc_react/static/css/main.5794faab.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.b6a8c48d.chunk.css",
     "static/js/2.ab06db7d.chunk.js",
     "static/css/main.5794faab.chunk.css",
-    "static/js/main.1737496f.chunk.js"
+    "static/js/main.6e77a33f.chunk.js"
   ]
 }
