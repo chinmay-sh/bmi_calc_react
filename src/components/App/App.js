@@ -4,6 +4,8 @@ import SystemSelect from '../SystemSelect/SystemSelect';
 import {Grid, Cell} from 'react-mdl';
 import TextField from '../TextField/TextField';
 import {ButtonPrimary,ButtonAccent} from '../Button/Button';
+import weightImg from '../../weight.png';
+import heightImg from '../../height.png';
 
 class App extends React.Component {
   
@@ -77,11 +79,11 @@ class App extends React.Component {
           <Cell col={3} phone={3} hidden> <SystemSelect /></Cell>
           <Cell col={4} hidden></Cell>
   
-          <Cell col={1}><img src="https://img.icons8.com/color/48/000000/weight-light.png"/></Cell>
+          <Cell col={1}><img src={weightImg}/></Cell>
           <Cell col={5} style={{background:'#fff',borderRadius:10}}>
             <TextField label="Weight (kgs)" on_change={this.updateWeight} value={this.state.weight}/> 
           </Cell>
-          <Cell col={1}><img src="https://img.icons8.com/color/48/000000/height.png"/></Cell>
+          <Cell col={1}><img src={heightImg}/></Cell>
           <Cell col={5} style={{background:'#fff',borderRadius:10}}>
             <TextField label="Height (cms)" on_change={this.updateHeight} value={this.state.height}/> 
           </Cell>
