@@ -6,11 +6,13 @@ import TextField from '../TextField/TextField';
 import {ButtonPrimary,ButtonAccent} from '../Button/Button';
 
 class App extends React.Component {
+  
   constructor(props){
     super(props);
+    this.heightField = React.createRef();
     this.state = {
-      height:0,
-      weight: 0,
+      height:'',
+      weight:'',
       isImperial: false
       //openDialog: true
     }
@@ -40,6 +42,7 @@ class App extends React.Component {
     this.setState({
       height: height
     });
+    
   }
 
   updateWeight = function(weight) {
@@ -76,11 +79,11 @@ class App extends React.Component {
   
           <Cell col={1}><img src="https://img.icons8.com/color/48/000000/weight-light.png"/></Cell>
           <Cell col={5} style={{background:'#fff',borderRadius:10}}>
-            <TextField  label="Weight (kgs)" on_change={this.updateWeight}/> 
+            <TextField label="Weight (kgs)" on_change={this.updateWeight} value={this.state.weight}/> 
           </Cell>
           <Cell col={1}><img src="https://img.icons8.com/color/48/000000/height.png"/></Cell>
           <Cell col={5} style={{background:'#fff',borderRadius:10}}>
-            <TextField  label="Height (cms)" on_change={this.updateHeight}/> 
+            <TextField label="Height (cms)" on_change={this.updateHeight} value={this.state.height}/> 
           </Cell>
   
           <Cell col={6}><ButtonPrimary text="Submit" onClick={()=> {alert(`BMI : ${this.bmi_calc_metric().toFixed(2)}`)}} /></Cell>

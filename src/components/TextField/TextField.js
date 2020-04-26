@@ -15,6 +15,7 @@ class TextField extends React.Component{
                     label={this.props.label}
                     floatingLabel
                     style={{width: '90%',color:'#000'}}
+                    value={this.props.value}
                 />
             </div>
             
