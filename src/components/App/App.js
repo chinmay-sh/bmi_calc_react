@@ -6,6 +6,7 @@ import TextField from '../TextField/TextField';
 import {ButtonPrimary,ButtonAccent} from '../Button/Button';
 import weightImg from '../../weight.png';
 import heightImg from '../../height.png';
+import Popup from '../Popup/Popup';
 
 class App extends React.Component {
   
@@ -15,19 +16,19 @@ class App extends React.Component {
     this.state = {
       height:'',
       weight:'',
-      isImperial: false
-      //openDialog: true
+      isImperial: false,
+      openDialog: false
     }
-/*
+
     this.handleOpenDialog = this.handleOpenDialog.bind(this);
     this.handleCloseDialog = this.handleCloseDialog.bind(this);
-*/
+
     this.updateHeight = this.updateHeight.bind(this);
     this.updateWeight = this.updateWeight.bind(this);
 
     this.reset = this.reset.bind(this);
   }
-/*
+
   handleOpenDialog() {
     this.setState({
       openDialog: true
@@ -38,8 +39,8 @@ class App extends React.Component {
     this.setState({
       openDialog: false
     });
-  }
-*/
+  }  
+
   updateHeight = function(height) {
     this.setState({
       height: height
@@ -56,17 +57,18 @@ class App extends React.Component {
   bmi_calc_metric = function(){
     return this.state.weight / ((this.state.height/100) * (this.state.height/100));
   }
-/*
-  const bmi_calc_imperial = function(){
 
+  bmi_calc_imperial = function(){
+    return (this.state.weight * 703) / ((this.state.height) * (this.state.height));
   }
-*/
+
   reset = function(){
     this.setState({
       height:0,
       weight:0
     });
   }
+
 
   render(){
     return (
@@ -87,8 +89,8 @@ class App extends React.Component {
           <Cell col={5} style={{background:'#fff',borderRadius:10}}>
             <TextField label="Height (cms)" on_change={this.updateHeight} value={this.state.height}/> 
           </Cell>
-  
-          <Cell col={6}><ButtonPrimary text="Submit" onClick={()=> {alert(`BMI : ${this.bmi_calc_metric().toFixed(2)}`)}} /></Cell>
+          <Popup openDialog={this.state.openDialog} bmi_val="5" onClose={this.handleCloseDialog} />
+          <Cell col={6}><ButtonPrimary text="Submit" onClick={this.handleOpenDialog} /></Cell>
           <Cell col={6}><ButtonAccent text="RESET" onClick={this.reset} /></Cell>
         </Grid>
       </div>

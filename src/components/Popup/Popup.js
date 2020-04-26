@@ -1,23 +1,22 @@
 import React from 'react';
-import {Dialog} from 'react-mdl';
+import {Dialog,DialogActions,DialogTitle,DialogContent,Button} from 'react-mdl';
 
 class Popup extends React.Component {
   
+
     render() {
       return (
-        <div>
-          <Dialog open={this.props.openDialog} onCancel={this.handleCloseDialog}>
+          <Dialog open={this.props.openDialog}>
             <DialogTitle>BMI Value</DialogTitle>
             <DialogContent>
               <p>{this.props.bmi_val}</p>
             </DialogContent>
             <DialogActions>
-              <Button type='button' onClick={this.handleCloseDialog}>OK</Button>
+              <Button type='button' onClick={this.props.onClose}>OK</Button>
             </DialogActions>
           </Dialog>
-        </div>
       );
     }
-  }
 
-  export default Popup;
+}
+export default Popup;
