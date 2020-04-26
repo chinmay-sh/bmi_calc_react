@@ -16,6 +16,8 @@ class App extends React.Component {
     this.state = {
       height:'',
       weight:'',
+      weightLabel: 'Weight (kgs)',
+      heightLabel: 'Height (cms)',
       isImperial: false,
       openDialog: false
     }
@@ -29,6 +31,7 @@ class App extends React.Component {
     this.reset = this.reset.bind(this);
 
     this.popMessage = this.popMessage.bind(this);
+    this.handleSystemChange = this.handleSystemChange.bind(this);
   }
 
   handleOpenDialog() {
@@ -81,29 +84,43 @@ class App extends React.Component {
     return bmi;
   }
 
+  handleSystemChange(imperial){
+    console.log(`imperial: ${imperial}`)
+    if(imperial){
+      this.setState({
+        weightLabel: "Weight (lbs)",
+        heightLabel: "Height (ins)",
+        isImperial: imperial
+      });
+    } else{
+      this.setState({
+        weightLabel: "Weight (kgs)",
+        heightLabel: "Height (cms)",
+        isImperial: imperial
+      });
+    }
+  }
+
 
   render(){
-
-    const weightLabel, heightLabel;
-    
 
     return (
       <div className="App">
         <Grid className="heading_grid">
           <Cell col={12} phone={5}><h2>Simple BMI Calculator</h2></Cell>
   
-          <Cell col={4} hidden></Cell>
-          <Cell col={1} phone={1} hidden>System: </Cell>
-          <Cell col={3} phone={3} hidden> <SystemSelect /></Cell>
-          <Cell col={4} hidden></Cell>
+          <Cell col={3}></Cell>
+          <Cell col={2} phone={2} style={{alignSelf:"center"}}>System: </Cell>
+          <Cell col={3} phone={3}><SystemSelect onChange={this.handleSystemChange} /></Cell>
+          <Cell col={4}></Cell>
   
           <Cell col={1}><img src={weightImg}/></Cell>
           <Cell col={5} style={{background:'#fff',borderRadius:10}}>
-            <TextField label="Weight (kgs)" on_change={this.updateWeight} value={this.state.weight}/> 
+            <TextField label={this.state.weightLabel} on_change={this.updateWeight} value={this.state.weight}/> 
           </Cell>
           <Cell col={1}><img src={heightImg}/></Cell>
           <Cell col={5} style={{background:'#fff',borderRadius:10}}>
-            <TextField label="Height (cms)" on_change={this.updateHeight} value={this.state.height}/> 
+            <TextField label={this.state.heightLabel} on_change={this.updateHeight} value={this.state.height}/> 
           </Cell>
           <Popup openDialog={this.state.openDialog} message={this.popMessage} onClose={this.handleCloseDialog} />
           <Cell col={6}><ButtonPrimary text="Submit" onClick={this.handleOpenDialog} /></Cell>

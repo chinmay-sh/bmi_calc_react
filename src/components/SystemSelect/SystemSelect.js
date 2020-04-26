@@ -1,13 +1,33 @@
 import React from 'react';
-import {Radio,RadioGroup} from 'react-mdl';
+import {Radio,RadioGroup,FormControlLabel} from '@material-ui/core';
 
 class SystemSelect extends React.Component{
 
     render(){
         return(
-            <RadioGroup name="system" value="metric" disabled>
-                <Radio value="imperial" ripple>Imperial</Radio>
-                <Radio value="metric">Metric</Radio>
+            <RadioGroup row name="system" defaultValue="metric" onChange={(e)=>{
+                if(e.target.value === "imperial"){
+                    console.log(e.target.value);
+                    this.props.onChange(true);
+                } else{
+                    console.log(e.target.value);
+                    this.props.onChange(false);
+                }
+                
+                
+            }}>
+                <FormControlLabel
+                    value="imperial"
+                    control={<Radio color="primary" />}
+                    label="Imperial"
+                    labelPlacement="end"
+                    />
+                <FormControlLabel
+                    value="metric"
+                    control={<Radio />}
+                    label="Metric"
+                    labelPlacement="end"
+                    />
             </RadioGroup>
         );
     }
