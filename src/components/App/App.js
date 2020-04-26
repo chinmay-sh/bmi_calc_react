@@ -27,6 +27,8 @@ class App extends React.Component {
     this.updateWeight = this.updateWeight.bind(this);
 
     this.reset = this.reset.bind(this);
+
+    this.popMessage = this.popMessage.bind(this);
   }
 
   handleOpenDialog() {
@@ -69,12 +71,26 @@ class App extends React.Component {
     });
   }
 
+  popMessage(){
+    var bmi;
+    if (this.state.isImperial){
+      bmi = `BMI: ${this.bmi_calc_imperial().toFixed(2)}`;
+    } else{
+      bmi = `BMI: ${this.bmi_calc_metric().toFixed(2)}`;
+    }
+    return bmi;
+  }
+
 
   render(){
+
+    const weightLabel, heightLabel;
+    
+
     return (
       <div className="App">
         <Grid className="heading_grid">
-          <Cell col={12} phone={5}><h1>Simple BMI Calculator</h1></Cell>
+          <Cell col={12} phone={5}><h2>Simple BMI Calculator</h2></Cell>
   
           <Cell col={4} hidden></Cell>
           <Cell col={1} phone={1} hidden>System: </Cell>
@@ -89,7 +105,7 @@ class App extends React.Component {
           <Cell col={5} style={{background:'#fff',borderRadius:10}}>
             <TextField label="Height (cms)" on_change={this.updateHeight} value={this.state.height}/> 
           </Cell>
-          <Popup openDialog={this.state.openDialog} bmi_val="5" onClose={this.handleCloseDialog} />
+          <Popup openDialog={this.state.openDialog} message={this.popMessage} onClose={this.handleCloseDialog} />
           <Cell col={6}><ButtonPrimary text="Submit" onClick={this.handleOpenDialog} /></Cell>
           <Cell col={6}><ButtonAccent text="RESET" onClick={this.reset} /></Cell>
         </Grid>
