@@ -7,7 +7,9 @@ class TextField extends React.Component{
         return(
             <div>
                 <Textfield
-                    onChange={this.props.on_change}
+                    onChange={e=>{
+                        this.props.on_change(e.target.value)
+                    }}
                     pattern="-?[0-9]*(\.[0-9]+)?"
                     error="Input is not a number!"
                     label={this.props.label}
