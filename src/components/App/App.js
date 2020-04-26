@@ -69,8 +69,8 @@ class App extends React.Component {
 
   reset = function(){
     this.setState({
-      height:0,
-      weight:0
+      height:'',
+      weight:''
     });
   }
 
