@@ -128,8 +128,8 @@ class App extends React.Component {
     return (
       <div className="App">
         <Grid className="heading_grid">
-          <Cell col={12} phone={4}><h2>BMI Calculator</h2></Cell>
-          <Cell col={12} phone={4}><Popup className="chartpop" openDialog={this.state.openChartDialog} 
+          <Cell col={12} phone={4} tablet={8}><h2>BMI Calculator</h2></Cell>
+          <Cell col={12} phone={4} tablet={8}><Popup className="chartpop" openDialog={this.state.openChartDialog} 
             message={this.popChartMessage} 
             onClose={this.handleChartCloseDialog} title="BMI CHART" />
             <Button style={{color:"#1eff00"}} raised ripple onClick={this.handleChartOpenDialog}>
@@ -137,23 +137,23 @@ class App extends React.Component {
             </Button>
           </Cell>
 
-          <Cell col={4} phone={4}></Cell>
-          <Cell col={2} phone={1} style={{alignSelf:"center"}}>System: </Cell>
-          <Cell col={3} phone={3}><SystemSelect onChange={this.handleSystemChange} /></Cell>
-          <Cell col={3} phone={4}></Cell>
+          <Cell col={4} phone={4} tablet={2}></Cell>
+          <Cell col={2} phone={1} tablet={2} style={{alignSelf:"center"}}>System: </Cell>
+          <Cell col={3} phone={3} tablet={3}><SystemSelect onChange={this.handleSystemChange} /></Cell>
+          <Cell col={3} phone={4} tablet={1}></Cell>
   
-          <Cell col={1} phone={1}><img src={weightImg}/></Cell>
-          <Cell col={5} phone={3} style={{background:'#fff',borderRadius:10}}>
+          <Cell col={1} phone={1} tablet={1}><img src={weightImg}/></Cell>
+          <Cell col={5} phone={3} tablet={7} style={{background:'#fff',borderRadius:10}}>
             <TextField label={this.state.weightLabel} on_change={this.updateWeight} value={this.state.weight}/> 
           </Cell>
-          <Cell col={1} phone={1}><img src={heightImg}/></Cell>
-          <Cell col={5} phone={3} style={{background:'#fff',borderRadius:10}}>
+          <Cell col={1} phone={1} tablet={1}><img src={heightImg}/></Cell>
+          <Cell col={5} phone={3} tablet={7} style={{background:'#fff',borderRadius:10}}>
             <TextField label={this.state.heightLabel} on_change={this.updateHeight} value={this.state.height}/> 
           </Cell>
           <Popup openDialog={this.state.openDialog} title="BMI VALUE" message={this.popMessage} onClose={this.handleCloseDialog} />
-          <Cell col={12} phone={4} ></Cell>
-          <Cell col={6} phone={2}><ButtonPrimary text="Submit" onClick={this.handleOpenDialog} /></Cell>
-          <Cell col={6} phone={2}><ButtonAccent text="RESET" onClick={this.reset} /></Cell>
+          <Cell col={12} phone={4} tablet={8}></Cell>
+          <Cell col={6} phone={2} tablet={8}><ButtonPrimary text="Submit" onClick={this.handleOpenDialog} /></Cell>
+          <Cell col={6} phone={2} tablet={8}><ButtonAccent text="RESET" onClick={this.reset} /></Cell>
         </Grid>
       </div>
   

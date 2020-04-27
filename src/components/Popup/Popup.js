@@ -18,7 +18,7 @@ class Popup extends React.Component {
                 {this.props.message()}
               </DialogContentText>
             </DialogContent>
-            <DialogActions>
+            <DialogActions style={{justifyContent:"center"}}>
               <Button type='button' variant="contained" color="primary" style={{backgroundColor:"#369c52"}} centerRipple onClick={this.props.onClose}>OK</Button>
             </DialogActions>
           </Dialog>
