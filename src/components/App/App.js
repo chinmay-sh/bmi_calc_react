@@ -8,6 +8,7 @@ import weightImg from '../../weight.png';
 import heightImg from '../../height.png';
 import Popup from '../Popup/Popup';
 import BmiTable from '../BmiTable/BmiTable';
+import logo from '../../logo.png';
 
 class App extends React.Component {
   
@@ -128,7 +129,8 @@ class App extends React.Component {
     return (
       <div className="App">
         <Grid className="heading_grid">
-          <Cell col={12} phone={4} tablet={8}><h2>BMI Calculator</h2></Cell>
+          <Cell col={12} phone={1}><img src={logo} height="110" width="110" /></Cell>
+          <Cell col={12} phone={3} tablet={8}><h2>BMI Calculator</h2></Cell>
           <Cell col={12} phone={4} tablet={8}><Popup className="chartpop" openDialog={this.state.openChartDialog} 
             message={this.popChartMessage} 
             onClose={this.handleChartCloseDialog} title="BMI CHART" />
