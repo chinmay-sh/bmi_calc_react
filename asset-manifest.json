@@ -1,25 +1,26 @@
 {
   "files": {
     "main.css": "/bmi_calc_react/static/css/main.cde214f7.chunk.css",
-    "main.js": "/bmi_calc_react/static/js/main.94e4f82a.chunk.js",
-    "main.js.map": "/bmi_calc_react/static/js/main.94e4f82a.chunk.js.map",
+    "main.js": "/bmi_calc_react/static/js/main.cd866887.chunk.js",
+    "main.js.map": "/bmi_calc_react/static/js/main.cd866887.chunk.js.map",
     "runtime-main.js": "/bmi_calc_react/static/js/runtime-main.bc6e77e2.js",
     "runtime-main.js.map": "/bmi_calc_react/static/js/runtime-main.bc6e77e2.js.map",
     "static/css/2.b6a8c48d.chunk.css": "/bmi_calc_react/static/css/2.b6a8c48d.chunk.css",
     "static/js/2.15d1c313.chunk.js": "/bmi_calc_react/static/js/2.15d1c313.chunk.js",
     "static/js/2.15d1c313.chunk.js.map": "/bmi_calc_react/static/js/2.15d1c313.chunk.js.map",
     "index.html": "/bmi_calc_react/index.html",
-    "precache-manifest.5241a3b3e4999fd38a0027a1ef3900c5.js": "/bmi_calc_react/precache-manifest.5241a3b3e4999fd38a0027a1ef3900c5.js",
+    "precache-manifest.24a70fcd742edc3a421bed277b315f43.js": "/bmi_calc_react/precache-manifest.24a70fcd742edc3a421bed277b315f43.js",
     "service-worker.js": "/bmi_calc_react/service-worker.js",
     "static/css/2.b6a8c48d.chunk.css.map": "/bmi_calc_react/static/css/2.b6a8c48d.chunk.css.map",
     "static/css/main.cde214f7.chunk.css.map": "/bmi_calc_react/static/css/main.cde214f7.chunk.css.map",
-    "static/js/2.15d1c313.chunk.js.LICENSE.txt": "/bmi_calc_react/static/js/2.15d1c313.chunk.js.LICENSE.txt"
+    "static/js/2.15d1c313.chunk.js.LICENSE.txt": "/bmi_calc_react/static/js/2.15d1c313.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/bmi_calc_react/static/media/logo.19523405.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.bc6e77e2.js",
     "static/css/2.b6a8c48d.chunk.css",
     "static/js/2.15d1c313.chunk.js",
     "static/css/main.cde214f7.chunk.css",
-    "static/js/main.94e4f82a.chunk.js"
+    "static/js/main.cd866887.chunk.js"
   ]
 }
